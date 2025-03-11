@@ -1,19 +1,19 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: flask-monitoring-01
+  name: flask-monitoring-11
   annotations:
     nginx.ingress.kubernetes.io/rewrite-target: /
 spec:
   ingressClassName: nginx
   rules:
-    - host: flask-monitoring-01-dev-arctic.bamdns.local      # Domain name ที่จะใช้เข้าถึง
+    - host: flask-monitoring-11-dev-arctic.bamdns.local      # Domain name ที่จะใช้เข้าถึง
       http:
         paths:
           - path: /
             pathType: Prefix
             backend:
               service:
-                name: flask-monitoring-01  # ชื่อ service ที่จะเชื่อมต่อ
+                name: flask-monitoring-11  # ชื่อ service ที่จะเชื่อมต่อ
                 port:
                   number: 80                # Port ที่ service เปิดให้เข้าถึง
