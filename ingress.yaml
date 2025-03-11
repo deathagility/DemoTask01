@@ -10,7 +10,7 @@ metadata:
     ingress.kubernetes.io/use-port-in-redirects: "true"
 spec:
   rules:
-    - host: flask-monitoring-01-dev-arctic.bamdns.local      # Domain name ที่จะใช้เข้าถึง
+    - host: flask-monitoring-12-dev-arctic.bamdns.local      # Domain name ที่จะใช้เข้าถึง
       http:
         paths:
           - path: /?(.*)
