@@ -9,7 +9,6 @@ metadata:
 #    spec.ingressClassName: nginx
     ingress.kubernetes.io/use-port-in-redirects: "true"
 spec:
-  ingressClassName: nginx
   rules:
     - host: flask-monitoring-13-dev-arctic.bamdns.local      # Domain name ที่จะใช้เข้าถึง
       http:
