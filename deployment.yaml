@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flask-monitoring
+  name: flask-monitoring-01
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: flask-monitoring
+      app: flask-monitoring-01
   template:
     metadata:
       labels:
-        app: flask-monitoring
+        app: flask-monitoring-01
     spec:
       containers:
-        - name: flask-monitoring
+        - name: flask-monitoring-01
           image: hbayraktar/flask-monitoring:latest
           ports:
             - containerPort: 5000
